@@ -12,7 +12,7 @@ However it does have a few fundamental flaws. I'd like to start with those since
 
 Other than that PlantMate does work and is a viable vacation watering system.
 
-If you'd like to build your own we will setup a page where you can claim your Kickstarter perk. The box would include all of the Parts that we bought to build the PlantMate, except for the 3d printed parts. You would have to pay for shipping and taxes. Let us know if there is interst.
+If you'd like to build your own we will setup a page where you can claim your Kickstarter perk. The box would include all of the Parts that we bought to build the PlantMate, except for the 3d printed parts. We can even include 1kg of ASA since we have no use for the parts. You would have to pay for shipping and taxes. Let us know if there is interst by contacting us here info@plantup.io 
 
 Otherwise the following materials are needed:
 - 5x 5v waterpump - the seller we got them from no longer exists.
@@ -20,7 +20,7 @@ Otherwise the following materials are needed:
 - 5 pipe fittings https://www.alibaba.com/product-detail/W3-9-M8-3-9-nut_1600927209678.html?spm=a2756.trade-list-buyer.0.0.401176e99Hz1av
 - powersupply 5v and usb c cable.
 - PCB (order from JLCPCB using the gerber files)
-- 2x 1mm 
+- 2x 1mm x 15mm metal pins(this is used for attaching the lid to the watertank as a hindge) can be made from a paperclip if needed.
 - 4x Soil Moisture Sensor. Any analog output will do, soldered to an aux connector, check schematic.
 - Optional: Spark ir sensor GP2Y0A21YK0F, doesn't work very well our suggestion is replacing using ultrasonic
 
@@ -33,5 +33,6 @@ Print the backplate vertically no supports 100% infil
 Print the lit vertically with supports
 Print the watertank with 100% infill no supports
 
+We printed everything in white ASA. ASA gives off a very premium feel, our first prototypes were done using PETG, sadly petg gives off a shiny plasticy feel. When printing asa cover the printer in a cardboard box, put the print bed to the very bottom of the printer and heat at 100 degrees for approx 2h. this makes printing asa super easy.
 
 Files for the PCB and the Watertank sensor can be found in electrical and files for 3d printing can be found in stl folder. 

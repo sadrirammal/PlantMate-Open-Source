@@ -1,0 +1,9 @@
+# OS / sync junk
+desktop.ini
+Thumbs.db
+.DS_Store
+~$*
+*.tmp
+
+# tool scratch
+.playwright-mcp/

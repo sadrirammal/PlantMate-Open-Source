@@ -75,10 +75,10 @@ If you're building from scratch, you'll need:
 | `Final_Tank_2,1.STEP` | Water tank (4 L) | 100% infill, no supports |
 | `Final_Tank_Rückwand_2,1.STEP` | Backplate. Carries the pumps, hose clips and the bulkhead fittings | Vertically, no supports, 100% infill |
 | `Lid.STEP` | Outer lid. The PCB mounts on its inside on four standoffs | Vertically, with supports |
-| `Final_Tank_Deckel_203.STEP` | Tank lid (hinged with the metal pins) | _TODO_ |
-| `Final_Verschraubung_oben.STEP` / `Final_Verschraubung_unten.STEP` | Upper and lower halves of the printed fitting | _TODO_ |
+| `Final_Tank_Deckel_203.STEP` | Tank lid (hinged with the metal pins) | Doesn't Matter |
+| `Final_Verschraubung_oben.STEP` / `Final_Verschraubung_unten.STEP` | Upper and lower halves of the printed fitting that takes the screw | Vertical|
 | `Ein-Aus-Knopf_klein.STEP` | Power button cap | Small part, any orientation |
-| `Sensor_1.1_seite_1.STEP` / `Sensor_1.1_seite_2.STEP` | Soil moisture sensor housing, two halves | _TODO_ |
+| `Sensor_1.1_seite_1.STEP` / `Sensor_1.1_seite_2.STEP` | Soil moisture sensor housing, two halves | Vertical with supports |
 
 We printed everything in white ASA. ASA gives off a very premium feel. Our first prototypes were done in PETG, but PETG ends up looking shiny and plasticky.
 

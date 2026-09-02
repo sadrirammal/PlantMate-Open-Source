@@ -33,6 +33,14 @@ If you'd like to build your own, we will set up a page where you can claim your 
 
 Let us know if there is interest by contacting us at info@plantup.io.
 
+## What is open-sourced, and what isn't
+
+**Released:** all STL/STEP files for the printed parts, and the electrical engineering files (gerbers, schematic, BOM, pick-and-place). The PCB files are ready to upload to [JLCPCB](https://jlcpcb.com), which is where we ordered ours.
+
+**Not released:** the app, the API and the firmware source. The code base was never containerised or built to be easily set up and hosted by someone else. Refactoring it so that it can be self-hosted would be a huge effort. If there is real demand for self-hosting we will start that process, but it would take a while.
+
+This isn't needed to build and run a PlantMate. As promised, we keep hosting and maintaining the API and the app. Anyone can flash the PCB with the test firmware below, and the board then downloads the latest production firmware from our server automatically. How to do that is described in the Firmware section.
+
 ## Bill of materials
 
 If you're building from scratch, you'll need:
@@ -99,7 +107,17 @@ The PCB is programmed with PlatformIO. Start with the test firmware here: https:
 
 It cycles each pump for a few seconds so you can spot a wrongly wired unit, then downloads the production firmware from our server over the air.
 
-Our Server will stay online.
+Our server stays online, so the board will keep receiving the production firmware over the air. See the section on what is open-sourced above.
+
+## App
+
+The PlantMate app is free and works with self-built units:
+
+- Android: https://play.google.com/store/apps/details?id=plantup.plantmate
+- iOS: https://apps.apple.com/ch/app/plantmate/id6739220520
+
+Setup in short: create an account, turn on Bluetooth, connect to the PlantMate in the app, enter your WiFi and link the device to your user. Then add a plant with the **+** button (the app recognises it from a photo), pick an outlet 1–4, plug the soil sensor and hose into that outlet and start the sensor calibration from the plant details. Calibration takes up to 2 hours and the soil should be dry when you start. Each pump can be calibrated separately with a 100 ml measuring cup from the plant settings.
+
 
 ## Assembly
 

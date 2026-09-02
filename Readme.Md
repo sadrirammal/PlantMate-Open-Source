@@ -13,11 +13,11 @@ It does have a few fundamental flaws though. I'd like to start with those, since
 
 ## Known flaws
 
-1. **The 3D prints leak.** Even when printed in ASA they start leaking after a few months (best case). This can be fixed by applying [Dichtol](https://www.3djake.ch/de-CH/diamant-polymer/dichtol-am). It works, but applying it is a real pain — a painter's mask is highly recommended.
+1. **The 3D prints leak.** Even when printed in ASA they start leaking after a few months (best case). This can be fixed by applying [Dichtol](https://www.3djake.ch/de-CH/diamant-polymer/dichtol-am). It works, but applying it is a real pain. A painter's mask is highly recommended.
 
 2. **The tank siphons itself empty.** If the outlet of the water hose is below the water level inside the tank, it will siphon the water out. So the plants have to be placed above the unit. This heavily hurt our application, since we wanted PlantMate to be a nice addition to the room, and for that it would have to sit on top of furniture. A small anti-siphon check valve on each outlet line would most likely solve this; we never got around to testing it.
 
-3. **The soil moisture sensors corrode.** The ones we chose last approximately 8–12 months. If you need something longer lasting, the [Vegetronix sensor](https://vegetronix.com/soil-moisture-sensor) is an excellent choice — we couldn't use it because of the price, otherwise our product would have been $400+.
+3. **The soil moisture sensors corrode.** The ones we chose last approximately 8–12 months. If you need something longer lasting, the [Vegetronix sensor](https://vegetronix.com/soil-moisture-sensor) is an excellent choice. We couldn't use it because of the price, otherwise our product would have been $400+.
 
 4. **Noisy AUX input.** The AUX on the PCB hooks directly to the ADC of the ESP32. This causes noise in the soil moisture readings and should be improved.
 
@@ -47,15 +47,15 @@ If you're building from scratch, you'll need:
 
 **Electronics**
 
-- PCB — order from JLCPCB using the gerber files in `Electrical/`. The folder also contains the BOM and pick-and-place file, so you can have JLCPCB assemble the board for you instead of soldering the SMD parts yourself.
+- PCB. Order from JLCPCB using the gerber files in `Electrical/`. The folder also contains the BOM and pick-and-place file, so you can have JLCPCB assemble the board for you instead of soldering the SMD parts yourself.
 - 5x JST PH 2.0 pigtails, 2-pin, for the pumps. 1x JST PH 2.0 pigtail, 3-pin, for the water level sensor.
-- 4x soil moisture sensor. Any analog output will do. The sensor plugs into a 3.5 mm jack on the board, so wire each sensor to a 3.5 mm TRS (headphone-style) cable — check the schematic for the pinout. We used 3 m cables.
+- 4x soil moisture sensor. Any analog output will do. The sensor plugs into a 3.5 mm jack on the board, so wire each sensor to a 3.5 mm TRS (headphone-style) cable. Check the schematic for the pinout. We used 3 m cables.
 - Optional: Sharp IR distance sensor GP2Y0A21YK0F for the tank level. Doesn't work very well, our suggestion is to replace it with an ultrasonic sensor.
 - 5V USB power supply, at least 2 A (we shipped 20 W USB chargers), and a USB-A to USB-C cable.
 
 **Water side**
 
-- 5x 5V micro diaphragm water pump — the seller we got them from no longer exists. They sit in the five cradles at the bottom of the backplate, so look for the same form factor (round body, roughly 27 mm diameter).
+- 5x 5V micro diaphragm water pump. The seller we got them from no longer exists. They sit in the five cradles at the bottom of the backplate, so look for the same form factor (round body, roughly 27 mm diameter).
 - Silicone water tube, 3mm ID / 6mm OD, for the internal tubing (approx. 1m, plus however much hose you need to reach your plants).
 - 5x [pipe fittings](https://www.alibaba.com/product-detail/W3-9-M8-3-9-nut_1600927209678.html) (W3.9 M8 nut). These are the barbed bulkhead fittings that pass through the top of the backplate, 4 outlets plus 1 intake.
 - 5x plastic angled hose inserts (3.2 mm) to connect the pump outlets to the tubing.
@@ -80,7 +80,7 @@ If you're building from scratch, you'll need:
 | `Ein-Aus-Knopf_klein.STEP` | Power button cap | Small part, any orientation |
 | `Sensor_1.1_seite_1.STEP` / `Sensor_1.1_seite_2.STEP` | Soil moisture sensor housing, two halves | _TODO_ |
 
-We printed everything in white ASA. ASA gives off a very premium feel — our first prototypes were done in PETG, but PETG ends up looking shiny and plasticky.
+We printed everything in white ASA. ASA gives off a very premium feel. Our first prototypes were done in PETG, but PETG ends up looking shiny and plasticky.
 
 When printing ASA, cover the printer in a cardboard box, put the print bed all the way down and heat at 100°C for approx. 2h. This makes printing ASA super easy.
 
@@ -142,10 +142,10 @@ These are images from the old version but the process is the same.
 
 ## Repository layout
 
-- `Electrical/` — main PCB (V2.1) and the untested capacitive water tank sensor (V1). Each folder has gerbers, schematic PDF, BOM, pick-and-place and the EasyEDA source.
-- `STL/` — STEP and STL files for 3D printing.
-- `docs/images/` — assembly photos.
+- `Electrical/`: main PCB (V2.1) and the untested capacitive water tank sensor (V1). Each folder has gerbers, schematic PDF, BOM, pick-and-place and the EasyEDA source.
+- `STL/`: STEP and STL files for 3D printing.
+- `docs/images/`: assembly photos.
 
 ## License
 
-Released for personal and non-commercial use. You're explicitly welcome to modify it and build on it — commercial use is not permitted.
+Released for personal and non-commercial use. You're explicitly welcome to modify it and build on it. Commercial use is not permitted.

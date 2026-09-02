@@ -1,6 +1,9 @@
 # PlantMate
 
-![PlantMate with the lid open](docs/images/06-lid-hinge.jpg)
+<p align="center">
+  <img src="docs/images/plantmate-front.jpg" width="45%" alt="PlantMate front">
+  <img src="docs/images/plantmate-back.jpg" width="45%" alt="PlantMate back with outlets 1-4, intake, USB-C and power button">
+</p>
 
 This is the open source release of PlantMate, an automatic plant watering system. The Kickstarter itself was funded (500 backers, over 500% of the goal), but we ran out of money during fulfilment when shipping and import costs came in far above what we had planned for. The product was fully built and it does work.
 
@@ -115,6 +118,7 @@ Rough order, following the photos below. _A proper step-by-step tutorial is comi
 |---|---|
 | ![Backplate with intake pump](docs/images/01-backplate-intake-pump.jpg) | ![Pumps and tubing](docs/images/02-pumps-and-tubing.jpg) |
 | ![PCB on the lid](docs/images/03-pcb-on-lid.jpg) | ![Front panel](docs/images/05-front-panel.jpg) |
+| ![Lid hinge](docs/images/06-lid-hinge.jpg) | |
 
 These are images from the old version but the process is the same.
 

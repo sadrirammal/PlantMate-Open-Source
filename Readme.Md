@@ -121,7 +121,7 @@ Setup in short: create an account, turn on Bluetooth, connect to the PlantMate i
 
 ## Assembly
 
-Rough order, following the photos below. _A proper step-by-step tutorial is coming._
+Rough order, following the photos below.
 
 1. Print and seal the tank, the backplate and the lid. Apply Dichtol to the inside of the tank and let it cure.
 2. Screw the five bulkhead fittings through the backplate and secure them with superglue.
